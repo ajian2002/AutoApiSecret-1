@@ -52,7 +52,7 @@ jobs:
 #         git config --global user.name wangziyingwen
 #         git add .
 #         git commit -m "update new token" -a
-    - name: Push changes
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+#     - name: Push changes
+#       uses: ad-m/github-push-action@master
+#       with:
+#         github_token: ${{ secrets.GITHUB_TOKEN }}
