@@ -46,13 +46,13 @@ jobs:
         rm -f configid.txt
         rm -f configkey.txt
     
-#     - name: commit #重新上传新token
-#       run: |
-#         git config --global user.email wz.lxh@outlook.com
-#         git config --global user.name wangziyingwen
-#         git add .
-#         git commit -m "update new token" -a
-#     - name: Push changes
-#       uses: ad-m/github-push-action@master
-#       with:
-#         github_token: ${{ secrets.GITHUB_TOKEN }}
+    - name: commit #重新上传新token
+      run: |
+        git config --global user.email wz.lxh@outlook.com
+        git config --global user.name wangziyingwen
+        git add .
+        git commit -m "update new token" -a
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
